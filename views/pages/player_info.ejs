@@ -6,9 +6,9 @@
 			<div class="col-4">
 				<div class="card">
 				<!-- TODO: Modify the ejs code below, to conditionally set the image_src to be from our chosen player -->
-				  <% 
+				  <%
 				  var image_src = '../resources/img/helmet.jpg';
-				  
+
 				  %>
 				 <img class="card-img-top" id="player_img" src= "<%- image_src %>" alt="Image of Football Player">
 				  <div class="card-body mx-auto">
@@ -16,8 +16,10 @@
 						<select class="custom-select" name="player_choice" onchange="this.form.submit()">
 							 <option selected>Select Player</option>
 							 <!-- TODO: Populate our select with player options
-							 			For each player, set a new option with a value matching the palyer's id, 
+							 			For each player, set a new option with a value matching the palyer's id,
 							 			but will display the player's name-->
+
+							<!-- I don't Understand, had trouble with seeing the dataflow -->
 						</select>
 					</form>
 				  </div>
@@ -30,6 +32,8 @@
 							<!-- TODO: Set Player Information
 							 			If a player has been selected, fill in their information in each of the fields below.
 							 		    You'll need to calculate here the player's average rushing, receiving, and passing yards.-->
+
+							<!-- I don't Understand had trouble seeing the dataflow -->
 							<th>Year</th>
 							<td>	</td>
 						</tr>
@@ -58,5 +62,5 @@
 			</div>
 		</div>
 	</div>
-  
+
 <% include ../partials/footer %>
